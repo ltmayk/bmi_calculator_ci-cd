@@ -4,7 +4,7 @@ def main():
     """
     Main function to run the BMI calculator.
     """
-    print("Welcome to the BMI Calculator!")
+    print("Welcome to the updated BMI Calculator!")
     weight = float(input("Please enter your weight in kilograms: "))
     height = float(input("Please enter your height in meters: "))
     bmi = calculate_bmi(weight, height)
