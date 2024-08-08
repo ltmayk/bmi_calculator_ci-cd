@@ -48,9 +48,8 @@ jobs:
         git config --global user.email "uguralpererdogan@gmail.com"
         git config --global user.name "ltmayk"
 
-    - name: Create Git tag
+    - name: Push changes
       run: |
+        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/ltmayk/bmi_calculator_ci-cd.git
         git tag -a v1.0.0 -m "Initial release"
         git push origin v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
